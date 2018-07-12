@@ -1,0 +1,5 @@
+Añadir cantidad de almacen total(por medida)
+cant. almacen en decimal
+Armar productos 
+Armar memus o combos
+Armar promociones
