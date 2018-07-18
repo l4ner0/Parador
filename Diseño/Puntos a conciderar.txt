@@ -3,3 +3,9 @@ cant. almacen en decimal
 Armar productos 
 Armar memus o combos
 Armar promociones
+
+
+
+16-97-2018
+
+Crear un menu donde me permita ingresar gastos adicionales (luz, agua,...)
