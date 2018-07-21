@@ -3,13 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Productos/frmVerOfertas.java</file>
-            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Productos/frmOferta.java</file>
-            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Productos/frmVerProductos.java</file>
-            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Compras/frmVerCompras.java</file>
-            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Productos/frmCategoriasProductos.java</file>
-            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Productos/frmProducto.java</file>
-            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Ventas/frmVentas.java</file>
+            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Almacen/frmInsumos.java</file>
+            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Almacen/frmEditarInsumo.java</file>
+            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Almacen/frmVerInsumo.java</file>
+            <file>file:/C:/Users/Usuario/Documents/Repositorios/Parador/Programación/Administrativo/Parador-Administrador/src/Vistas/Almacen/frmNuevoInsumo.java</file>
         </group>
     </open-files>
 </project-private>

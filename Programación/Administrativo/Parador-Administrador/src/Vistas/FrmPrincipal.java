@@ -7,6 +7,7 @@ package Vistas;
 
 import Vistas.Almacen.frmCategoriasAlmacen;
 import Vistas.Almacen.frmInsumos;
+import Vistas.Almacen.frmNuevoInsumo;
 import Vistas.Compras.frmComprar;
 import Vistas.Compras.frmProveedor;
 import Vistas.Compras.frmVerCompras;
@@ -64,7 +65,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         escritorioPrincipal.setLayout(escritorioPrincipalLayout);
         escritorioPrincipalLayout.setHorizontalGroup(
             escritorioPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGap(0, 1024, Short.MAX_VALUE)
         );
         escritorioPrincipalLayout.setVerticalGroup(
             escritorioPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,7 +213,9 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
     private void itemInsumosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemInsumosActionPerformed
         frmInsumos insumo = new frmInsumos();
+        frmNuevoInsumo nuevoInsumo = new frmNuevoInsumo();
         escritorioPrincipal.add(insumo);
+        escritorioPrincipal.add(nuevoInsumo);
         insumo.show();
     }//GEN-LAST:event_itemInsumosActionPerformed
 
@@ -300,7 +303,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JDesktopPane escritorioPrincipal;
+    public static javax.swing.JDesktopPane escritorioPrincipal;
     private javax.swing.JMenuItem itemCategoriaAlmacen;
     private javax.swing.JMenuItem itemCategoriaProducto;
     private javax.swing.JMenuItem itemComprar;

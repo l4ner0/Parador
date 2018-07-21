@@ -40,8 +40,6 @@ public class frmCategoriasAlmacen extends javax.swing.JInternalFrame {
         setBorder(javax.swing.BorderFactory.createTitledBorder("Datos de la Categoría"));
         setClosable(true);
         setIconifiable(true);
-        setMaximizable(true);
-        setResizable(true);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel2.setText("Categoría de Insumos");

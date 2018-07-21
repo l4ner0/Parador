@@ -5,6 +5,9 @@
  */
 package Vistas.Ventas;
 
+import Vistas.FrmPrincipal;
+import Vistas.frmExportar;
+
 /**
  *
  * @author Usuario
@@ -131,6 +134,11 @@ public class frmVentas extends javax.swing.JInternalFrame {
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton1.setText("Exportar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton2.setText("Imprimir");
@@ -195,6 +203,12 @@ public class frmVentas extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        frmExportar exportar = new frmExportar();
+        FrmPrincipal.escritorioPrincipal.add(exportar);
+        exportar.show();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

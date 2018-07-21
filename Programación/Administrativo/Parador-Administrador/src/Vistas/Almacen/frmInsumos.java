@@ -5,6 +5,9 @@
  */
 package Vistas.Almacen;
 
+import Vistas.FrmPrincipal;
+import Vistas.frmExportar;
+
 /**
  *
  * @author Usuario
@@ -38,8 +41,6 @@ public class frmInsumos extends javax.swing.JInternalFrame {
 
         setClosable(true);
         setIconifiable(true);
-        setMaximizable(true);
-        setResizable(true);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel2.setText("Insumos");
@@ -49,9 +50,19 @@ public class frmInsumos extends javax.swing.JInternalFrame {
 
         btnInsumo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnInsumo.setText("Insumo");
+        btnInsumo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInsumoActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton2.setText("Exportar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton3.setText("Imprimir");
@@ -112,6 +123,18 @@ public class frmInsumos extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnInsumoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsumoActionPerformed
+        frmNuevoInsumo nuevoInsumo = new frmNuevoInsumo();
+        FrmPrincipal.escritorioPrincipal.add(nuevoInsumo);
+        nuevoInsumo.show();
+    }//GEN-LAST:event_btnInsumoActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        frmExportar exportar = new frmExportar();
+        FrmPrincipal.escritorioPrincipal.add(exportar);
+        exportar.show();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
