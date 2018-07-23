@@ -12,11 +12,11 @@ import Vistas.FrmPrincipal;
  * @author Usuario
  */
 public class frmComprar extends javax.swing.JInternalFrame {
-
     /**
      * Creates new form frmComprar
      */
     public frmComprar() {
+        
         initComponents();
     }
 

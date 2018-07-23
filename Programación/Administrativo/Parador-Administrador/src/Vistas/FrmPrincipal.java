@@ -17,6 +17,7 @@ import Vistas.Productos.frmProducto;
 import Vistas.Productos.frmVerOfertas;
 import Vistas.Productos.frmVerProductos;
 import Vistas.Ventas.frmVentas;
+import java.awt.Dimension;
 
 /**
  *
@@ -196,18 +197,27 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private void itemVerComprasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemVerComprasActionPerformed
         frmVerCompras verCompras = new frmVerCompras();
         escritorioPrincipal.add(verCompras);
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = verCompras.getSize();
+        verCompras.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         verCompras.show();
     }//GEN-LAST:event_itemVerComprasActionPerformed
 
     private void itemProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemProductoActionPerformed
         frmProducto producto = new frmProducto();
         escritorioPrincipal.add(producto);
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = producto.getSize();
+        producto.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         producto.show();
     }//GEN-LAST:event_itemProductoActionPerformed
 
     private void itemCategoriaAlmacenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemCategoriaAlmacenActionPerformed
         frmCategoriasAlmacen categoriasAlmacen = new frmCategoriasAlmacen();
         escritorioPrincipal.add(categoriasAlmacen);
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = categoriasAlmacen.getSize();
+        categoriasAlmacen.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         categoriasAlmacen.show();
     }//GEN-LAST:event_itemCategoriaAlmacenActionPerformed
 
@@ -216,30 +226,45 @@ public class FrmPrincipal extends javax.swing.JFrame {
         frmNuevoInsumo nuevoInsumo = new frmNuevoInsumo();
         escritorioPrincipal.add(insumo);
         escritorioPrincipal.add(nuevoInsumo);
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = insumo.getSize();
+        insumo.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         insumo.show();
     }//GEN-LAST:event_itemInsumosActionPerformed
 
     private void itemProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemProveedorActionPerformed
         frmProveedor proveedor = new frmProveedor();
         escritorioPrincipal.add(proveedor);
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = proveedor.getSize();
+        proveedor.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         proveedor.show();
     }//GEN-LAST:event_itemProveedorActionPerformed
 
     private void itemComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemComprarActionPerformed
         frmComprar comprar = new frmComprar();
-        escritorioPrincipal.add(comprar);
+        escritorioPrincipal.add(comprar);   
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = comprar.getSize();
+        comprar.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         comprar.show();
     }//GEN-LAST:event_itemComprarActionPerformed
 
     private void itemCategoriaProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemCategoriaProductoActionPerformed
         frmCategoriasProductos categoriaProducto = new frmCategoriasProductos();
         escritorioPrincipal.add(categoriaProducto);
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = categoriaProducto.getSize();
+        categoriaProducto.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         categoriaProducto.show();
     }//GEN-LAST:event_itemCategoriaProductoActionPerformed
 
     private void itemVerProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemVerProductosActionPerformed
         frmVerProductos verProductos = new frmVerProductos();
         escritorioPrincipal.add(verProductos);
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = verProductos.getSize();
+        verProductos.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         verProductos.show();
         
     }//GEN-LAST:event_itemVerProductosActionPerformed
@@ -247,12 +272,18 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private void itemOfertaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemOfertaActionPerformed
         frmOferta oferta = new frmOferta();
         escritorioPrincipal.add(oferta);
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = oferta.getSize();
+        oferta.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         oferta.show();
     }//GEN-LAST:event_itemOfertaActionPerformed
 
     private void itemVerOfertasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemVerOfertasActionPerformed
         frmVerOfertas verOferta = new frmVerOfertas();
         escritorioPrincipal.add(verOferta);
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = verOferta.getSize();
+        verOferta.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         verOferta.show();
     }//GEN-LAST:event_itemVerOfertasActionPerformed
 
@@ -263,6 +294,9 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private void menuVentasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuVentasMouseClicked
         frmVentas ventas = new frmVentas();
         escritorioPrincipal.add(ventas);
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = ventas.getSize();
+        ventas.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
         ventas.show();
     }//GEN-LAST:event_menuVentasMouseClicked
 
