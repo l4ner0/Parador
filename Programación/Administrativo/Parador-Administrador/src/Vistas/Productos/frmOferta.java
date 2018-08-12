@@ -6,6 +6,8 @@
 package Vistas.Productos;
 
 import Vistas.FrmPrincipal;
+import static Vistas.FrmPrincipal.escritorioPrincipal;
+import java.awt.Dimension;
 
 /**
  *
@@ -248,6 +250,11 @@ public class frmOferta extends javax.swing.JInternalFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         frmBuscarProducto buscarProducto = new frmBuscarProducto();
         FrmPrincipal.escritorioPrincipal.add(buscarProducto);
+        
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = buscarProducto.getSize();
+        buscarProducto.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+        
         buscarProducto.show();
     }//GEN-LAST:event_jButton2ActionPerformed
 

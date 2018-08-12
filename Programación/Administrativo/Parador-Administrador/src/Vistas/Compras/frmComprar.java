@@ -6,6 +6,8 @@
 package Vistas.Compras;
 
 import Vistas.FrmPrincipal;
+import static Vistas.FrmPrincipal.escritorioPrincipal;
+import java.awt.Dimension;
 
 /**
  *
@@ -419,6 +421,11 @@ public class frmComprar extends javax.swing.JInternalFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         frmBuscarInsumo buscarInsumo = new frmBuscarInsumo();
         FrmPrincipal.escritorioPrincipal.add(buscarInsumo);
+        
+        Dimension desktopSize = escritorioPrincipal.getSize();
+        Dimension FrameSize = buscarInsumo.getSize();
+        buscarInsumo.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
+        
         buscarInsumo.show();
     }//GEN-LAST:event_jButton1ActionPerformed
 
